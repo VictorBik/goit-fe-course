@@ -1,6 +1,9 @@
-html {
+* {
     margin: 0;
     padding: 0;
+}
+
+html {
     box-sizing: border-box;
     font-size: 0;
 }
@@ -23,8 +26,8 @@ header {
 
 .navigation {
     width: 700px;
-    height: 115px;
-    margin-top: 70px;
+    margin-top: 77px;
+    margin-bottom: 103px;
     padding: 0;
     display: inline-flex;
     justify-content: space-around;
@@ -51,21 +54,16 @@ header {
 main > article {
     display: inline-block;
     width: 420px;
-    height: 610px;
     margin-right: 60px;
-    
+    margin-bottom: 132px;
 }
 
 article:nth-child(2n) {
     margin-right: 0;
 }
 
-main h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 30px;
-    color: rgb(98, 98, 98);
-    line-height: 1.2;
-    z-index: 18;
+main img {
+    margin-bottom: 32px;
 }
 
 main h3 {
@@ -74,7 +72,15 @@ main h3 {
     font-size: 14px;
     color: rgb(180, 173, 158);
     line-height: 1.2;
-    z-index: 19;
+    margin-bottom: 28px;
+}
+
+main h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    color: rgb(98, 98, 98);
+    line-height: 1.2;
+    margin-bottom: 40px;
 }
 
 main p {
@@ -82,7 +88,6 @@ main p {
     font-size: 14px;
     color: rgb(98, 98, 98);
     line-height: 1.714;
-    z-index: 17;
 }
 
 /* button */
@@ -99,11 +104,6 @@ main button {
     font-size: 20px;
     border-width: 1px;
     border-color: rgb(98, 98, 98);
-    background: #ffffff;
-    z-index: 4;
-}
-
-.main_button {
-    text-decoration: none;
-    color:  rgb(98, 98, 98);
+    color: rgb(98, 98, 98);
+    background: transparent;
 }
