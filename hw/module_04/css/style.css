@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 0;
+}
+
+*, *::before, ::after {
+    box-sizing: inherit;
+}
+
+.conteiner {
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+/* Header */
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Logo */
+
+header h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+h1>a {
+    text-decoration: none;
+    color: rgb(15, 1, 1);
+}
+
+/* Navigation */
+
+.navigation {
+    display: inline-block;
+}
+
+header ul {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(15, 1, 1);
+    /* display: inline-block; */
+    /* list-style: none; */
+    text-transform: uppercase;
+    vertical-align: middle;
+    
+}
+
+header li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header li:hover, header li:focus {
+    color: rgb(26, 188, 156);
+    transition: .15s linear;
+}
