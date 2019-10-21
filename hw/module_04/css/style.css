@@ -20,46 +20,59 @@ html {
 
 /* Header */
 
+header {
+    padding-top: 38px;
+    padding-bottom: 105px;
+}
+
 header nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 /* Logo */
 
 header h1 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 30px;
-    text-transform: uppercase;
     display: inline-block;
+    vertical-align: middle;
 }
 
 h1>a {
     text-decoration: none;
-    color: rgb(15, 1, 1);
+    color: rgb(85, 82, 82);
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.067;
+}
+
+h1::first-letter {
+    font-weight: 900;
+    color: rgb(26, 188, 156); ;
 }
 
 /* Navigation */
 
-.navigation {
-    display: inline-block;
-}
-
 header ul {
+    display: inline-block;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: bold;
-    color: rgb(15, 1, 1);
-    /* display: inline-block; */
-    /* list-style: none; */
+    color: rgb(85, 82, 82);
     text-transform: uppercase;
-    vertical-align: middle;
-    
+    line-height: 0.786;
 }
 
 header li {
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
+    margin: 0 15px;
+}
+
+header li:last-child {
+    margin-right: 0;
 }
 
 header li:hover, header li:focus {
