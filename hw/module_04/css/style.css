@@ -31,7 +31,7 @@ header nav {
     align-items: center;
 }
 
-/* Logo */
+/* Header logo */
 
 header h1 {
     display: inline-block;
@@ -53,7 +53,7 @@ h1::first-letter {
     color: rgb(26, 188, 156); ;
 }
 
-/* Navigation */
+/* Header navigation */
 
 header ul {
     display: inline-block;
@@ -77,5 +77,75 @@ header li:last-child {
 
 header li:hover, header li:focus {
     color: rgb(26, 188, 156);
-    transition: .15s linear;
+    transition: .15s;
 }
+
+/* Main */
+
+/* Main title */
+
+main>h2>a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: .667;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(81, 81, 81);
+}
+
+main>h2 {
+    text-align: center;
+    margin-bottom: 131px;
+}
+
+main h2:after {
+    content: "";
+    display: block;
+    width: 164px;
+    height: 7px;
+    margin: 0 auto;
+    margin-top: 32px;
+    background-color: rgb(26, 188, 156);
+    opacity: 0;
+    transition: opacity .15s;
+}
+
+main h2:hover:after {
+    opacity: 1;
+}
+
+/* Main galery */
+
+main section {
+    display: inline-block;
+}
+
+main h3, main h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+
+/* ._26 {
+    font-size: 18px;
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.778;
+    text-align: center;
+    position: absolute;
+    left: 460.263px;
+    top: 652.618px;
+    width: 30px;
+    height: 17px;
+    z-index: 49;
+  } */
+  
+
+/* .Rectangle_50 {
+    background-color: rgb(233, 240, 253);
+    width: 255px;
+    height: 322px;
+    */
