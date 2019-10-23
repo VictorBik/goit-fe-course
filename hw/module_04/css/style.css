@@ -61,12 +61,13 @@ h1::first-letter {
 
 /* Header navigation */
 
-header ul {
+header li>a {
     display: inline-block;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: bold;
     color: rgb(85, 82, 82);
+    text-decoration: none;
     text-transform: uppercase;
     line-height: 0.786;
 }
@@ -81,7 +82,7 @@ header li:last-child {
     margin-right: 0;
 }
 
-header li:hover, header li:focus {
+header li>a:hover {
     color: rgb(26, 188, 156);
     transition: .15s;
 }
