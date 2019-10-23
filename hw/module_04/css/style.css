@@ -90,7 +90,7 @@ header li:hover, header li:focus {
 
 /* Main title */
 
-.title a {
+.title {
     font-family: 'Roboto', sans-serif;
     font-size: 48px;
     font-weight: 900;
