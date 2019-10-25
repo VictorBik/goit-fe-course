@@ -32,9 +32,6 @@ header {
 }
 
 header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 /* Header logo */
@@ -51,7 +48,6 @@ h1>a {
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
     font-weight: 300;
-    line-height: 1.067;
 }
 
 h1::first-letter {
@@ -61,8 +57,13 @@ h1::first-letter {
 
 /* Header navigation */
 
-header li>a {
+header ul {
     display: inline-block;
+    float: right;
+    margin-top: 11px;
+}
+
+header li>a {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: bold;
@@ -74,7 +75,6 @@ header li>a {
 
 header li {
     display: inline-block;
-    vertical-align: top;
     margin: 0 15px;
 }
 
@@ -138,18 +138,9 @@ main section:hover {
 }
 
 .main_img {
-    display: block;
     width: 255px;
     height: 282px;
-    background-color: rgb(233, 240, 253);
-    display: flex;
-    align-items: center;
-}
 
-main img {
-    display: block;
-    margin: 0 auto;
-    max-width: 255px;
 }
 
 main h3, main span {
@@ -159,7 +150,6 @@ main h3, main span {
     font-weight: 900;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
-    vertical-align: middle;
 }
 
 main h3 {
@@ -226,7 +216,6 @@ footer p {
 
 footer button {
     display: block;
-    margin: 0 auto;
     width: 160px;
     height: 51px;
     background-color: rgb(26, 188, 156);
