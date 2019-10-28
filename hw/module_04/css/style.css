@@ -13,10 +13,8 @@ html {
 }
 
 .conteiner {
-    width: 100%;
-    max-width: 1110px;
-    margin: 0 auto;
-    margin-bottom: 105px;
+    width: 1110px;
+    margin: 0 auto 105px;
 }
 
 .clearfix:after {
@@ -70,7 +68,7 @@ header li>a {
 
 header li {
     display: inline-block;
-    margin: 0 15px;
+    margin-right: 30px;
 }
 
 header li:last-child {
@@ -162,8 +160,7 @@ section span {
 
 article {
     display: inline-block;
-    width: 100%;
-    max-width: 350px;
+    width: 350px;
     margin-right: 30px;
 }
 

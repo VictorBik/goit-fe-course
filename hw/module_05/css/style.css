@@ -15,17 +15,20 @@ html {
     margin: 0 auto;
 }
 
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
 /* Header */
 
-nav {
-    display: inline-block;
-    height: 91px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 /* Logo */
+
+h1 {
+    display: inline-block;
+    line-height: 90px;
+}
 
 h1 a {
     font-family: 'Roboto', sans-serif;
@@ -44,6 +47,7 @@ h1::first-letter {
 /* Navigation */
 
 header ul {
+    float: right;
     list-style: none;
     text-transform: uppercase;
 }
@@ -54,6 +58,7 @@ header li {
     font-size: 14px;
     font-weight: 700;
     margin: 0 15px;
+    line-height: 90px;
 }
 
 nav > ul a {
@@ -70,5 +75,10 @@ header li > a:hover {
     transition: .15s;
 }
   
+/* Slider */
 
-
+.slider {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
