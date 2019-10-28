@@ -125,7 +125,7 @@ main section:nth-child(4n+1) {
     margin-right: 0;
 }
 
-main section:hover {
+main section:hover .name_price {
     background-color: rgb(26, 188, 156);
     transition: .15s;
 }
