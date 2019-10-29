@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    /* font-size: 0; */
 }
 
 *, *::before, *::after {
@@ -10,8 +11,7 @@ html {
 
 .conteiner {
     display: block;
-    width: 100%;
-    max-width: 1110px;
+    width: 1110px;
     margin: 0 auto;
 }
 
@@ -78,7 +78,33 @@ header li > a:hover {
 /* Slider */
 
 .slider {
-    width: 100%;
-    max-width: 1600px;
+    width: 1600px;
     margin: 0 auto;
+    position: relative;
+}
+
+.slider > img {
+    position: absolute;
+}
+
+.name_slider {
+    position: absolute;
+}
+
+.name_slider h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    font-weight: 300;
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 82px;
+}
+
+.name_slider h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 54px;
 }
