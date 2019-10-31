@@ -71,7 +71,7 @@ nav ul li:last-child {
 }
 
 header li > a:hover {
-    color: rgb(26, 188, 156);
+    color: #1abc9c;
     transition: .15s;
 }
   
@@ -79,22 +79,25 @@ header li > a:hover {
 
 .slider {
     width: 1600px;
-    margin: 0 auto;
+    margin: 0 auto 101px;
     position: relative;
 }
 
-.slider > img {
-    position: absolute;
+.slider img {
+    filter: brightness(0.522);
 }
 
 .name_slider {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .name_slider h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 60px;
-    font-weight: 300;
+    font-weight: 900;
     color: #ffffff;
     text-transform: uppercase;
     line-height: 82px;
@@ -108,3 +111,30 @@ header li > a:hover {
     text-transform: uppercase;
     line-height: 54px;
 }
+
+/* Main galery */
+
+/* Title */
+
+main {
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    color: #515151;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.title:after {
+    content: "";
+    display: block;
+    width: 164px;
+    height: 7px;
+    background-color: #1abc9c;
+    margin: 32px auto 0;
+}
+
+
