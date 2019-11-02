@@ -115,6 +115,31 @@ header li > a:hover {
     line-height: 54px;
 }
 
+/* Icon */
+
+.slider_icon .pe-7s-angle-left {
+    position: absolute;
+    top: 50%;
+    left: 245px;
+    transform: translate(0, -50%);
+    font-size: 100px;
+    background-color: rgba(78, 198, 171, .651);
+}
+
+.slider_icon .pe-7s-angle-right {
+    position: absolute;
+    top: 50%;
+    right: 245px;
+    transform: translate(0, -50%);
+    font-size: 100px;
+    background-color: rgba(78, 198, 171, .651);
+}
+
+.slider_icon span {
+    color: #ffffff;
+    padding: 2px;
+}
+
 /* Main galery */
 
 /* Title */
@@ -157,6 +182,7 @@ main section:hover .name_price {
 
 .name_price {
     background-color: #323232;
+
 }
 
 .name_price h2 {
@@ -171,7 +197,6 @@ main section:hover .name_price {
     color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
-
 }
 
 .name_price span {
@@ -185,8 +210,127 @@ main section:hover .name_price {
     padding: 10px;
 }
 
+/* Hover batton */
+
+.backdrop {
+    position: relative;
+}
+
+.cart_icon {
+    width: 235px;
+    height: 262px;
+    background-color: rgba(0, 0, 0, .549);
+}
+
+.cart_icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.cart_icon:hover {
+    opacity: 1;
+    transition: .2s;
+}
+
+main .button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main form {
+    float: left;
+    margin: 0 9px 7px 0;
+}
+
+main form:nth-child(3n) {
+    margin-right: 0;
+}
+main form:last-child {
+    margin: 0;
+}
+
+main button {
+    font-size: 30px;
+    background: none;
+    color: #ffffff;
+    border: 1px solid;
+}
+
+main p {
+    float: right;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 8px;
+}
+
+main .pe-7s-like {
+    padding: 9px;
+}
+
+main .pe-7s-shuffle {
+    padding: 9px;
+}
+
+main .pe-7s-clock {
+    padding: 9px;
+}
+
+main .pe-7s-cart {
+    float: left;
+    width: 166px;
+    padding: 9px;
+    background-color: #323232;
+}
+
+main .pe-7s-like:hover {
+    background-color: #1abc9c;
+    transition: .2s;
+}
+
+main .pe-7s-shuffle:hover {
+    background-color: #1abc9c;
+    transition: .2s;
+}
+
+main .pe-7s-clock:hover {
+    background-color: #1abc9c;
+    transition: .2s;
+}
+
+main .pe-7s-cart:hover {
+    background-color: #1abc9c;
+    transition: .2s;
+}
+
+/* Footer */
+
+footer {
+    width: 1600px;
+    margin: 0 auto;
+}
+
+footer p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fefefe;
+    background-color: #323232;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 33px 0;
+}
+
+footer span {
+    color: #1abc9c;
+}
 
 
 
-
-  
