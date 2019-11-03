@@ -146,6 +146,15 @@ header li > a:hover {
     padding: 2px;
 }
 
+.slider_icon {
+    opacity: 0;
+}
+
+.slider:hover .slider_icon {
+    opacity: 1;
+    transition: .2s;
+}
+
 /* Main galery */
 
 /* Title */
