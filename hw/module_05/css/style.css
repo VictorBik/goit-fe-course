@@ -261,7 +261,7 @@ main button {
     border: 1px solid;
 }
 
-main p {
+main abbr {
     float: right;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
