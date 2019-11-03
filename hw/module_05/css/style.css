@@ -117,10 +117,17 @@ header li > a:hover {
 
 /* Icon */
 
+.slider .icon_left {
+    float: left;
+}
+
+.slider .icon_rigth {
+    float: right;
+}
+
 .slider_icon .pe-7s-angle-left {
     position: absolute;
     top: 50%;
-    left: 245px;
     transform: translate(0, -50%);
     font-size: 100px;
     background-color: rgba(78, 198, 171, .651);
@@ -129,8 +136,7 @@ header li > a:hover {
 .slider_icon .pe-7s-angle-right {
     position: absolute;
     top: 50%;
-    right: 245px;
-    transform: translate(0, -50%);
+    transform: translate(-100%, -50%);
     font-size: 100px;
     background-color: rgba(78, 198, 171, .651);
 }
@@ -328,7 +334,8 @@ footer p {
     padding: 33px 0;
 }
 
-footer span {
+footer a {
+    text-decoration: none;
     color: #1abc9c;
 }
 
