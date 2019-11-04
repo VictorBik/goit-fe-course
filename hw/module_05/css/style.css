@@ -235,9 +235,6 @@ main section:hover .name_price {
     width: 235px;
     height: 262px;
     background-color: rgba(0, 0, 0, .549);
-}
-
-.cart_icon {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -286,15 +283,9 @@ main abbr {
     margin-top: 8px;
 }
 
-main .pe-7s-like {
-    padding: 9px;
-}
-
-main .pe-7s-shuffle {
-    padding: 9px;
-}
-
-main .pe-7s-clock {
+main .pe-7s-like,
+.pe-7s-shuffle,
+.pe-7s-clock {
     padding: 9px;
 }
 
@@ -305,22 +296,10 @@ main .pe-7s-cart {
     background-color: #323232;
 }
 
-main .pe-7s-like:hover {
-    background-color: #1abc9c;
-    transition: .2s;
-}
-
-main .pe-7s-shuffle:hover {
-    background-color: #1abc9c;
-    transition: .2s;
-}
-
-main .pe-7s-clock:hover {
-    background-color: #1abc9c;
-    transition: .2s;
-}
-
-main .pe-7s-cart:hover {
+main .pe-7s-like:hover,
+.pe-7s-shuffle:hover,
+.pe-7s-clock:hover,
+.pe-7s-cart:hover {
     background-color: #1abc9c;
     transition: .2s;
 }
