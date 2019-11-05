@@ -81,13 +81,13 @@ header li > a:hover {
 /* Slider */
 
 .slider {
-    width: 1600px;
     margin: 0 auto;
     margin-bottom: 101px;
     position: relative;
 }
 
 .slider img {
+    width: 100%;
     filter: brightness(0.522);
 }
 
