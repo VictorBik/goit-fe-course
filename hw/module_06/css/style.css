@@ -1,9 +1,9 @@
 html {
     box-sizing: border-box;
-    /* font-size: 0; */
+    font-size: 0;
 }
 
-*, *:before, *:after {
+*, *::before, *::after {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
@@ -13,4 +13,150 @@ html {
     display: block;
     width: 1200px;
     margin: 0 auto;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 130px;
+}
+
+/* Logo */
+
+h1 > a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #95e1d3;
+}
+
+/* Navigation */
+
+.header nav {
+    display: flex;
+    align-items: flex-end;
+}
+
+.header  li {
+    display: inline-flex;
+    list-style: none;
+    position: relative;
+}
+
+.header li:not(:last-child) {
+    margin-right: 55px;
+}
+
+.header > nav a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #95e1d3;
+}
+
+.header li::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #f38181;
+    position: absolute;
+    top: 150%;
+    opacity: 0;
+}
+
+.header > nav a:hover {
+    color: #f38181;
+    transition: .2s;
+}
+
+.header li:hover::after {
+    opacity: 1;
+    transition: .2s;
+}
+
+/* Article */
+
+/* Title */
+
+.title {
+    margin: 0 auto 110px;
+    text-align: center;
+}
+
+.title::after {
+    content: "";
+    display: flex;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin: 40px auto 0;
+}
+
+.title h2 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+    font-weight: 400;
+    color: #333333;
+    margin-bottom: 20px;
+}
+.title h2::first-letter {
+    text-transform: uppercase;
+}
+
+.title h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #333333;
+    text-transform: uppercase;
+}
+
+/* Section article */
+
+article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 100px;
+}
+
+.article {
+    display: inline-flex;
+}
+
+.article_blog {
+    display: inline-block;
+}
+
+.article h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333333;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+article p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #999999;
+}
+
+/* Section team */
+
+.team p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #999999;
+    text-align: center;
+    margin: 0 130px 90px;
 }
