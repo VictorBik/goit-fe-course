@@ -134,6 +134,10 @@ header li > a:hover {
     background-color: rgba(78, 198, 171, .651);
 }
 
+.slider_icon .pe-7s-angle-left:hover {
+    background-color: rgba(78, 198, 171, 1);
+}
+
 .slider_icon .pe-7s-angle-right {
     position: absolute;
     top: 50%;
@@ -142,19 +146,16 @@ header li > a:hover {
     background-color: rgba(78, 198, 171, .651);
 }
 
+.slider_icon .pe-7s-angle-right:hover {
+    background-color: rgba(78, 198, 171, 1);
+}
+
 .slider_icon span {
     color: #ffffff;
     padding: 2px;
 }
 
-.slider_icon {
-    opacity: 0;
-}
 
-.slider:hover .slider_icon {
-    opacity: 1;
-    transition: .2s;
-}
 
 /* Main galery */
 
