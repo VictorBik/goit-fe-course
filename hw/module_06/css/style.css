@@ -132,7 +132,7 @@ h1 > a {
 .article {
     display: inline-flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 100px;
 }
 
@@ -142,15 +142,43 @@ h1 > a {
     margin-bottom: 100px;
 }
 
-.article_blog img {
-    margin: 0 30px;
+.icon_blog::after {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin-right: 30px;
+}
+
+.alarm {
+    background: url(../img/service_icon/ALARM.png) no-repeat;
+}
+
+.line_graph {
+    background: url(../img/service_icon/LINE_GRAPH.png) no-repeat;
+}
+
+.computer_ok {
+    background: url(../img/service_icon/COMPUTER_OK.png) no-repeat;
+}
+
+.book_2 {
+    background: url(../img/service_icon/BOOK_2.png) no-repeat;
+}
+
+.home {
+    background: url(../img/service_icon/HOME.png) no-repeat;
+}
+
+.image {
+    background: url(../img/service_icon/IMAGE.png) no-repeat;
 }
 
 .article h2 {
     margin-bottom: 20px;
 }
 
-.article a {
+.article h2 > a {
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
@@ -172,6 +200,10 @@ article p {
     display: flex;
     justify-content: space-between;
     margin-bottom: 85px;
+}
+
+.team_cart {
+    width: 380px;
 }
 
 .team_cart h2 {
@@ -287,7 +319,12 @@ footer {
 
 /* Form */
 
+footer form {
+    height: 40px;
+}
+
 footer button {
+    height: 100%;
     border-style: none;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
@@ -295,12 +332,13 @@ footer button {
     color: #ffffff;
     text-transform: uppercase;
     background-color: #95e1d3;
-    padding: 11px 33px;
+    padding: 0 33px;
     outline: none;
 }
 
 footer input {
-    padding: 10px 0;
+    width: 230px;
+    height: 100%;
     border-style: none;
     border:1px solid #e7e7e7;
     outline: none;
