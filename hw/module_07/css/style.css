@@ -124,16 +124,28 @@ article {
   text-align: center;
 }
 
-.img_services {
+.ecommerce::before,
+.responcsive_web::before,
+.web_security::before {
+  content: "";
+  display: block;
   width: 75px;
   height: 75px;
   margin: 0 auto 25px;
-  border: 4px solid;
-  border-color: var(--primary-gold-color);
+  border: 4px solid var(--primary-gold-color);
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+
+.ecommerce::before {
+  background: url(../img/icon/Icon-Basket1.png) no-repeat;
+}
+
+.responcsive_web::before {
+  background: url(../img/icon/Icon-Laptop1.png) no-repeat;
+}
+
+.web_security::before {
+  background: url(../img/icon/Icon-Locked1.png) no-repeat;
 }
 
 article h3 {
