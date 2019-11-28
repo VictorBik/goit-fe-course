@@ -244,3 +244,5 @@ main button {
 main button::first-letter {
   text-transform: uppercase;
 }
+
+/* rename module */
