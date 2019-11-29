@@ -66,12 +66,17 @@ h1 {
   margin-bottom: 40px;
 }
 
-h1 > a {
-  text-decoration: none;
+h1 a {
+  /* text-decoration: none; */
   font-family: "Montserrat-Bold";
   font-size: 20px;
   color: var(--white-color);
   text-transform: uppercase;
+}
+
+h1 a:hover {
+  text-decoration: none;
+  color: var(--white-color);
 }
 
 /* Headeer title */
@@ -101,6 +106,10 @@ header p::first-letter {
 
 .button {
   text-align: center;
+}
+
+button:focus {
+  outline-style: none;
 }
 
 header button {
@@ -138,7 +147,7 @@ main h2::first-letter {
 
 .partner_card {
   text-align: center;
-  width: 260px;
+  max-width: 260px;
   margin: 0 auto 30px;
   position: relative;
 }
