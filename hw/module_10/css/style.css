@@ -18,6 +18,7 @@ html {
   --lightgreen-color: #95e1d3;
   --ligthgrey-color: #e5e5e5;
   --coral-color: #f38181;
+  --placeholder-color: #cccccc;
 }
 
 .container {
@@ -281,4 +282,36 @@ footer {
 .footer-license__link {
   text-decoration: none;
   color: var(--coral-color);
+}
+
+/* Footer form */
+
+.footer-form {
+  height: 40px;
+}
+
+.footer-form__textarea {
+  width: 230px;
+  height: 100%;
+  font: 400 15px "Montserrat", sans-serif;
+  color: var(--dark-color);
+  padding-left: 10px;
+}
+
+.footer-form__textarea::placeholder {
+  font: italic 300 15px "Roboto", sans-serif;
+  color: var(--placeholder-color);
+  text-transform: capitalize;
+}
+
+.footer-form__btn {
+  height: 100%;
+  border-style: none;
+  font: 700 14px "Montserrat", sans-serif;
+  color: var(--white-color);
+  text-transform: uppercase;
+  background-color: var(--lightgreen-color);
+  padding: 0 33px;
+  outline: none;
+  cursor: pointer;
 }
