@@ -28,9 +28,12 @@ html {
 
 /* Header */
 
+/* linear-gradient(#fce38a, #ffcc99) */
+
 header {
   width: 100%;
-  background: url(../img/bg/header/Layer15.png) no-repeat center/cover;
+  background: linear-gradient(#f38181e6, #fce38ae6),
+    url(../img/bg/header/Layer15.png) no-repeat center/cover;
   margin-bottom: 46px;
 }
 
@@ -245,7 +248,7 @@ header {
   transition: 0.2s linear;
 }
 
-.team-social-card {
+.team-social__card {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -258,10 +261,34 @@ header {
   );
   opacity: 0;
   transition: 0.2s linear;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.team-photo:hover .team-social-card {
+.team-photo:hover .team-social__card {
   opacity: 1;
+  transition: 0.2s linear;
+}
+
+/* Team social icon */
+
+.team-social__card-item {
+  width: 55px;
+  height: 55px;
+  background-color: var(--yellow-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s linear;
+}
+
+.team-social__card-item:not(:last-child) {
+  border-right: 1px solid var(--coral-color);
+}
+
+.team-social__card-item:hover {
+  background-color: var(--coral-color);
   transition: 0.2s linear;
 }
 
