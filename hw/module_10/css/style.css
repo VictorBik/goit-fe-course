@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
 html {
   font-size: 0;
 }
@@ -7,6 +9,7 @@ html {
 *::after {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -32,6 +35,16 @@ html {
 
 header {
   width: 100%;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(#f38181e6),
+      to(#fce38ae6)
+    ),
+    url(../img/bg/header/Layer15.png) no-repeat center/cover;
+  background: -o-linear-gradient(#f38181e6, #fce38ae6),
+    url(../img/bg/header/Layer15.png) no-repeat center/cover;
   background: linear-gradient(#f38181e6, #fce38ae6),
     url(../img/bg/header/Layer15.png) no-repeat center/cover;
   margin-bottom: 46px;
@@ -72,27 +85,37 @@ header {
   height: 3px;
   background-color: var(--yellow-color);
   opacity: 0;
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
   transition: 0.2s linear;
 }
 
 .header-nav__list-item:hover {
   color: var(--yellow-color);
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
   transition: 0.2s linear;
 }
 
 .header-nav__list-item:hover::after {
   opacity: 1;
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
   transition: 0.2s linear;
 }
 
 .header-nav__list-icon {
   padding-top: 10px;
   fill: var(--white-color);
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
   transition: 0.2s linear;
 }
 
 .header-nav__list-icon:hover {
   fill: var(--yellow-color);
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
   transition: 0.2s linear;
 }
 
@@ -104,11 +127,15 @@ header {
   margin-top: 10px;
   background-color: var(--yellow-color);
   opacity: 0;
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
   transition: 0.2s linear;
 }
 
 .header-nav__list-icon:hover::after {
   opacity: 1;
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
   transition: 0.2s linear;
 }
 
@@ -154,6 +181,8 @@ header {
 
 .title::after {
   content: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 60px;
   height: 3px;
@@ -265,13 +294,20 @@ header {
 
 .team-photo {
   position: relative;
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
   transition: 0.2s linear;
   margin-bottom: 30px;
 }
 
 .team-photo:hover {
+  -webkit-transform: translate(-10px, -10px);
+  -ms-transform: translate(-10px, -10px);
   transform: translate(-10px, -10px);
+  -webkit-box-shadow: 10px 10px 0 #95e1d3;
   box-shadow: 10px 10px 0 #95e1d3;
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
   transition: 0.2s linear;
 }
 
@@ -279,19 +315,39 @@ header {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#f38181e6),
+    to(#fce38ae6)
+  );
+  background-image: -o-linear-gradient(#f38181e6, #fce38ae6);
   background-image: linear-gradient(#f38181e6, #fce38ae6);
   opacity: 0;
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
   transition: 0.2s linear;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
 .team-photo:hover .team-social__card {
   opacity: 1;
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
   transition: 0.2s linear;
 }
 
@@ -302,9 +358,17 @@ header {
   height: 55px;
   background-color: var(--yellow-color);
   fill: var(--coral-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
   transition: 0.2s linear;
 }
 
@@ -315,6 +379,8 @@ header {
 .team-social__card-item:hover {
   background-color: var(--coral-color);
   fill: var(--white-color);
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
   transition: 0.2s linear;
 }
 
@@ -349,6 +415,30 @@ footer {
   font: 400 15px "Montserrat", sans-serif;
   color: var(--dark-color);
   padding-left: 10px;
+}
+
+.footer-form__textarea::-webkit-input-placeholder {
+  font: italic 300 15px "Roboto", sans-serif;
+  color: var(--placeholder-color);
+  text-transform: capitalize;
+}
+
+.footer-form__textarea::-moz-placeholder {
+  font: italic 300 15px "Roboto", sans-serif;
+  color: var(--placeholder-color);
+  text-transform: capitalize;
+}
+
+.footer-form__textarea:-ms-input-placeholder {
+  font: italic 300 15px "Roboto", sans-serif;
+  color: var(--placeholder-color);
+  text-transform: capitalize;
+}
+
+.footer-form__textarea::-ms-input-placeholder {
+  font: italic 300 15px "Roboto", sans-serif;
+  color: var(--placeholder-color);
+  text-transform: capitalize;
 }
 
 .footer-form__textarea::placeholder {
