@@ -29,6 +29,10 @@ html {
   width: 100%;
 }
 
+.svg {
+  display: none;
+}
+
 /* Header */
 
 /* linear-gradient(#fce38a, #ffcc99) */
