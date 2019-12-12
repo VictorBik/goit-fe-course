@@ -1,0 +1,7 @@
+@import './section-team/team-photo.scss';
+@import './section-team/team-title.scss';
+@import './section-team/team-icon.scss';
+
+.team-section {
+  @include flexspbw;
+}

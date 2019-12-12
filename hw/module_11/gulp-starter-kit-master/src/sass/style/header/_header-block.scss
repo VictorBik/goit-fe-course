@@ -1,0 +1,33 @@
+// Title
+
+.header-block__title {
+  text-align: center;
+  font: 72px $KaushanScript;
+  color: $white;
+  text-transform: capitalize;
+  margin-bottom: 130px;
+
+  &-text {
+    font: 150px $Montserrat-Bold;
+    @include whitefontupp;
+    line-height: 0.9;
+  }
+}
+
+// Button
+
+.header-block__btn {
+  text-align: center;
+
+  &-item {
+    border-style: none;
+    background-color: transparent;
+    width: 160px;
+    height: 40px;
+    border: 3px solid $white;
+    cursor: pointer;
+    margin-bottom: 230px;
+    font: 14px $Montserrat-Bold;
+    @include whitefontupp;
+  }
+}

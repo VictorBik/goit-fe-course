@@ -1,0 +1,15 @@
+@mixin whitefontupp {
+  color: $white;
+  text-transform: uppercase;
+}
+
+@mixin flexspbw {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin flexalitcenter {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}

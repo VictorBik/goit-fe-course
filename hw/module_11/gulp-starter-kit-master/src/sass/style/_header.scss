@@ -1,0 +1,8 @@
+@import './header/header-intro.scss';
+@import './header/header-block.scss';
+
+header {
+  background: $line-gradient,
+    url(../images/header/Layer15.png) no-repeat center/cover;
+  margin-bottom: 45px;
+}

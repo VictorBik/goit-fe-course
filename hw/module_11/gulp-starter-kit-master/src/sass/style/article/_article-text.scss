@@ -1,0 +1,17 @@
+.article-blog {
+  display: flex;
+  flex-basis: 30%;
+  margin-bottom: 100px;
+
+  &__item-title {
+    font: 14px $Montserrat;
+    color: $dark;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  &__item-text {
+    font: 15px $Roboto;
+    color: $grey;
+  }
+}

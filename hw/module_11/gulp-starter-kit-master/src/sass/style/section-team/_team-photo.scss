@@ -1,0 +1,21 @@
+.team {
+  width: 380px;
+  margin-bottom: 85px;
+
+  &-photo {
+    position: relative;
+    transition: 0.2s linear;
+    margin-bottom: 30px;
+
+    &:hover {
+      transform: translate(-10px, -10px);
+      box-shadow: 10px 10px 0 $lightgreen;
+      transition: 0.2s linear;
+    }
+
+    &:hover .team-social__card {
+      opacity: 1;
+      transition: 0.2s linear;
+    }
+  }
+}

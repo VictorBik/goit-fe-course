@@ -1,0 +1,35 @@
+.article-blog__icon {
+  cursor: default;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin-right: 30px;
+  }
+}
+
+.alarm {
+  background: url(../images/service_icon/ALARM.png) no-repeat;
+}
+
+.line_graph {
+  background: url(../images/service_icon/LINE_GRAPH.png) no-repeat;
+}
+
+.computer_ok {
+  background: url(../images/service_icon/COMPUTER_OK.png) no-repeat;
+}
+
+.book_2 {
+  background: url(../images/service_icon/BOOK2.png) no-repeat;
+}
+
+.home {
+  background: url(../images/service_icon/HOME.png) no-repeat;
+}
+
+.image {
+  background: url(../images/service_icon/IMAGE.png) no-repeat;
+}

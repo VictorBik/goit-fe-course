@@ -1,0 +1,32 @@
+// Colors
+
+$white: #ffffff;
+$yellow: #fce38a;
+$dark: #333333;
+$grey: #999999;
+$lightgreen: #95e1d3;
+$ligthgrey: #e5e5e5;
+$coral: #f38181;
+$placeholder-color: #cccccc;
+$line-gradient: linear-gradient(#f38181e6, #fce38ae6);
+
+// Font
+
+$KaushanScript: 'KaushanScript-Regular';
+$Montserrat: 'Montserrat-Regular';
+$Montserrat-Bold: 'Montserrat-Bold';
+$Roboto: 'Roboto-Regular';
+$Roboto-LightItalic: 'Roboto-LightItalic';
+
+// Container var
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+// SVG
+
+.svg {
+  display: none;
+}

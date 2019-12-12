@@ -1,0 +1,8 @@
+@import './article/article-text.scss';
+@import './article/article-icon.scss';
+
+.article {
+  @include flexspbw;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}

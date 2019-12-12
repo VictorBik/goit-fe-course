@@ -1,0 +1,25 @@
+// Primary title
+
+.title {
+  text-align: center;
+  font: 24px $KaushanScript;
+  color: $dark;
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font: 30px $Montserrat-Bold;
+    text-transform: uppercase;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: $coral;
+    margin: 40px auto 110px;
+  }
+}
